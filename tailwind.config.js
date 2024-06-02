@@ -6,15 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // primary: "#050816",
-        primary: "#060407",
-        // main: "#915eff",
-        main: "#02E2F2",
-        // main: "red",
+        primary: "#050816",
+        // primary: "#060407",
+        main: "#915eff",
+        // main: "#02E2F2",
         secondary: "#aaa6c3",
-        // tertiary: "#151030",
-        tertiary: "#000814",
-        "black-100": "black",
+        tertiary: "#151030",
+        // tertiary: "#000814",
+        "black-100": "#100D25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
         "white-200": "#dee2e6",
