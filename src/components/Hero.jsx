@@ -5,10 +5,8 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Hero = () => {
   const [ text ] = useTypewriter({
-    words: ['SAJAL', 'Developer', 'Programmer'],
+    words: ['SAJAL', 'Developer', 'Coder'],
             loop: {},
-            // cursor,
-            cursorStyle: '_',
             typeSpeed: 120,
             deleteSpeed: 50,
   })
@@ -17,7 +15,7 @@ const Hero = () => {
       <div className={`${styles.paddingX} flex flex-row absolute inset-0 top-[120px] max-w-7xl mx-auto items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="h-4 w-4 rounded-full bg-main" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-1 sm:h-80 h-40 bg-gradient-to-b from-main" />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
@@ -30,7 +28,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
+      
       <ComputersCanvas />
 
       <div className="absolute flex justify-center w-full items-center xs:bottom-10 bottom-30">
