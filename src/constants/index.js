@@ -31,8 +31,8 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "Projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -198,67 +198,89 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Fridge Insider",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "App-based platform that allows users to manage their fridge contents, filtering food items by recency, expiry date, and upcoming expiration, along with notifications for soon-to-expire items. Planned future enhancements involve scheduling for expired food.",
       tags: [
         {
-          name: "react",
+          name: "react native",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "firebase",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Antriksh1305/Fridge-Insider",
     },
+    
     {
-      name: "Job IT",
+      name: "News App",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Built a customizable news app allowing users to categorize and filter news content for a personalized experience. The app features real-time updates to deliver the latest news.",
       tags: [
         {
-          name: "react",
+          name: "react.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "API",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Sajalg364/News-App",
     },
     {
-      name: "Trip Guide",
+      name: "OTT App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Developed an OTT platform empowering users to discover and explore movies effortlessly by providing essential information such as ratings, trailers, reviews, and cast details, enhancing their decision-making process.",
       tags: [
         {
-          name: "nextjs",
+          name: "react native",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "api",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/Sajalg364/OTT_APP",
+    },
+    {
+      name: "Chat App",
+      description:
+        "Developed a real-time chat application empowering users to engage in instant messaging, share files of various formats, and create groups for collaborative communication.",
+      tags: [
+        {
+          name: "react.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongoDB",
+          color: "green-text-gradient",
+        },
+        {
+          name: "socket.io",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Sajalg364/Chat_App",
     },
   ];
   
