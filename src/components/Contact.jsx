@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 // import { EarthCanvas } from "./canvas";
-const { EarthCanvas } = lazy(() => import("./canvas"));
+const  EarthCanvas  = lazy(() => import("./canvas/Earth"));
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 

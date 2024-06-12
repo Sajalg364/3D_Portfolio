@@ -1,7 +1,10 @@
+import { lazy } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 // import { ComputersCanvas, EarthCanvas } from './canvas';
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
+// import { useTypewriter, Cursor } from 'react-simple-typewriter'
+
+const  ComputersCanvas  = lazy(() => import("./canvas/Computers"));
 
 const Hero = () => {
   // const [ text ] = useTypewriter({
@@ -29,7 +32,7 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* <EarthCanvas /> */}
+      <ComputersCanvas />
 
       <div className="absolute flex justify-center w-full items-center xs:bottom-10 bottom-30">
         <a href="#about">
