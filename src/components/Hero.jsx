@@ -2,18 +2,18 @@ import { lazy } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 // import { ComputersCanvas, EarthCanvas } from './canvas';
-// import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 // const  ComputersCanvas  = lazy(() => import("./canvas/Computers"));
-const  EarthCanvas  = lazy(() => import("./canvas/Earth"));
+// const  EarthCanvas  = lazy(() => import("./canvas/Earth"));
 
 const Hero = () => {
-  // const [ text ] = useTypewriter({
-  //   words: ['SAJAL', 'Developer', 'Coder'],
-  //           loop: {},
-  //           typeSpeed: 120,
-  //           deleteSpeed: 50,
-  // })
+  const [ text ] = useTypewriter({
+    words: ['SAJAL', 'Developer', 'Coder'],
+            loop: 2,
+            typeSpeed: 120,
+            deleteSpeed: 50,
+  })
   return (
     <section className="mx-auto relative w-full h-screen">
       <div className={`${styles.paddingX} flex flex-row absolute inset-0 top-[120px] max-w-7xl mx-auto items-start gap-5`}>
@@ -24,7 +24,7 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm
-            <span className="text-main"> SAJAL </span>
+            <span className="text-main"> {text} </span>
           </h1>
             {/* <span><Cursor cursorStyle='_'/></span> */}
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop React Websites <br className="sm:block hidden" />
@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
       
       {/* <ComputersCanvas /> */}
-      <EarthCanvas />
+      {/* <EarthCanvas /> */}
 
       <div className="absolute flex justify-center w-full items-center xs:bottom-10 bottom-30">
         <a href="#about">
