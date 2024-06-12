@@ -4,12 +4,12 @@ import { ComputersCanvas } from './canvas';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Hero = () => {
-  const [ text ] = useTypewriter({
-    words: ['SAJAL', 'Developer', 'Coder'],
-            loop: {},
-            typeSpeed: 120,
-            deleteSpeed: 50,
-  })
+  // const [ text ] = useTypewriter({
+  //   words: ['SAJAL', 'Developer', 'Coder'],
+  //           loop: {},
+  //           typeSpeed: 120,
+  //           deleteSpeed: 50,
+  // })
   return (
     <section className="mx-auto relative w-full h-screen">
       <div className={`${styles.paddingX} flex flex-row absolute inset-0 top-[120px] max-w-7xl mx-auto items-start gap-5`}>
@@ -20,7 +20,7 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm
-            <span className="text-main"> {text} </span>
+            <span className="text-main"> SAJAL </span>
           </h1>
             {/* <span><Cursor cursorStyle='_'/></span> */}
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop React Websites<br className="sm:block hidden" />
