@@ -5,6 +5,7 @@ import { styles } from "../styles";
 // import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const  ComputersCanvas  = lazy(() => import("./canvas/Computers"));
+const  EarthCanvas  = lazy(() => import("./canvas/Earth"));
 
 const Hero = () => {
   // const [ text ] = useTypewriter({
@@ -32,7 +33,8 @@ const Hero = () => {
         </div>
       </div>
       
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
+      <EarthCanvas />
 
       <div className="absolute flex justify-center w-full items-center xs:bottom-10 bottom-30">
         <a href="#about">
