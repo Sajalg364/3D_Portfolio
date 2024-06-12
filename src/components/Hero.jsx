@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from './canvas';
+import { ComputersCanvas, EarthCanvas } from './canvas';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Hero = () => {
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <ComputersCanvas />
+      <EarthCanvas />
 
       <div className="absolute flex justify-center w-full items-center xs:bottom-10 bottom-30">
         <a href="#about">
