@@ -4,7 +4,7 @@ import { styles } from "../styles";
 // import { ComputersCanvas, EarthCanvas } from './canvas';
 // import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
-const  ComputersCanvas  = lazy(() => import("./canvas/Computers"));
+// const  ComputersCanvas  = lazy(() => import("./canvas/Computers"));
 const  EarthCanvas  = lazy(() => import("./canvas/Earth"));
 
 const Hero = () => {
