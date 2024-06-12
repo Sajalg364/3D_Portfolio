@@ -23,13 +23,13 @@ const Hero = () => {
             <span className="text-main"> SAJAL </span>
           </h1>
             {/* <span><Cursor cursorStyle='_'/></span> */}
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop React Websites<br className="sm:block hidden" />
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop React Websites <br className="sm:block hidden" />
             & React Native Apps
           </p>
         </div>
       </div>
       
-      {/* <ComputersCanvas /> */}
+      <ComputersCanvas />
 
       <div className="absolute flex justify-center w-full items-center xs:bottom-10 bottom-30">
         <a href="#about">
