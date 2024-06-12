@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
-const  ComputersCanvas  = lazy(() => import("./canvas/Computers"));
+// const  ComputersCanvas  = lazy(() => import("./canvas/Computers"));
 
 const Hero = () => {
+
   const [ text ] = useTypewriter({
     words: ['SAJAL', 'Developer', 'Coder'],
             loop: 2,
