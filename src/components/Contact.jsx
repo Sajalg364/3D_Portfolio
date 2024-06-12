@@ -1,13 +1,11 @@
 import React, { useRef, useState, lazy } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
-// import { EarthCanvas } from "./canvas";
-// const  EarthCanvas  = lazy(() => import("./canvas/Earth"));
-const  ComputersCanvas  = lazy(() => import("./canvas/Computers"));
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+
+const  EarthCanvas  = lazy(() => import("./canvas/Earth"));
 
 const Contact = () => {
   const formRef = useRef();
@@ -129,10 +127,10 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <ComputersCanvas />
+        <EarthCanvas />
       </motion.div>
     </div>
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export default Contact;
