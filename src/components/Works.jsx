@@ -17,15 +17,16 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} >
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] flex w-full h-full flex-col'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] flex w-full h-full flex-col '
       >
+
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
@@ -69,7 +70,7 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <>
+    <div className="mb-[100px]">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}><span className="text-main">P</span>rojects.</h2>
@@ -93,7 +94,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
