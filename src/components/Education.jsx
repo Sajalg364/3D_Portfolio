@@ -1,4 +1,3 @@
-
 import React from 'react'
 import styled from 'styled-components'
 import Timeline from '@mui/lab/Timeline';
@@ -97,7 +96,8 @@ const Education = () => {
                     My education has been a journey of self-discovery and growth. My educational details are as follows.
                 </motion.p>
             </div>
-
+            <Container id="education">
+            <Wrapper>
             <TimelineSection>
                 <Timeline>
                     {education.map((education, index) => (
@@ -114,6 +114,8 @@ const Education = () => {
                 </Timeline>
 
             </TimelineSection>
+            </Wrapper>
+            </Container>  
         </>
 
     )
