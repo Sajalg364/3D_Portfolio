@@ -22,7 +22,7 @@ const Container = styled.div`
     align-items: center;
     padding: 0px 0px 60px 0px;
     @media (max-width: 960px) {
-        padding: 0px;
+        padding: 20px;
     }
 `;
 
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1350px;
-    padding: 40px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
     gap: 12px;
     @media (max-width: 960px) {
         flex-direction: column;

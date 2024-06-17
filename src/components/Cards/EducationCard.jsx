@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { SectionWrapper } from '../../hoc'
 
 const Document = styled.img`
     display: none;
