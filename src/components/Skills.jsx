@@ -64,7 +64,7 @@ const SkillsContainer = styled.div`
 const Skill = styled.div`
   width: 100%;
   max-width: 500px;
-  background: ${({ theme }) => theme.card};
+  // background: ;
   border: 0.1px solid #854CE6;
   box-shadow: rgba(23, 92, 230, 0.15) 1px 4px 24px;
   border-radius: 16px;
@@ -151,7 +151,7 @@ const Skills = () => {
                                 speed: 450,
                             }}
                         >
-                            <Skill>
+                            <Skill className='bg-primary'>
                                 <SkillTitle>{skill.title}</SkillTitle>
                                 <SkillList>
                                     {skill.skills.map((item) => (

@@ -47,7 +47,7 @@ const ResumeButton = styled.a`
 
 const Hero = () => {
   const [ text ] = useTypewriter({
-    words: ['SAJAL', 'Developer', 'Coder'],
+    words: ['Developer', 'Leet Coder'],
             loop: Infinity,
             typeSpeed: 120,
             deleteSpeed: 50,
@@ -62,13 +62,16 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm
-            <span className="text-main"> {text} </span>
+            <span className="text-main"> Sajal </span>
           </h1>
-            {/* <span><Cursor cursorStyle='_'/></span> */}
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop React Websites <br className="sm:block hidden" />
+          <p className={`${styles.heroSubText2} text-white mt-[0.8rem]`}>
+            I am a 
+            <span className="text-main"> {text} </span>
+          </p>
+          <p className={`${styles.heroSubText} mt-[1.3rem] text-white-100`}>I develop React Websites <br/>
             & React Native Apps
           </p>
-          <ResumeButton className="z-20 mt-[24px]" href={bio.resume} target='_blank' >Resume</ResumeButton>
+          <ResumeButton className="z-20 mt-[30px]" href={bio.resume} target='_blank' >Resume</ResumeButton>
         </div>
       </div>
       

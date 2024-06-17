@@ -9,6 +9,7 @@ import { education } from '../constants';
 import EducationCard from './Cards/EducationCard';
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 
 const Container = styled.div`
@@ -71,9 +72,9 @@ const TimelineSection = styled.div`
     align-items: center;
     justify-content: center;
     gap: 12px;
-    @media (max-width: 660px) {
-        align-items: end;
-    }
+    // @media (max-width: 660px) {
+    //     align-items: center;
+    // }
 `;
 
 
@@ -81,31 +82,19 @@ const TimelineSection = styled.div`
 const Education = () => {
     return (
         <>
-            <motion.section
-                variants={staggerContainer()}
-                initial='hidden'
-                whileInView='show'
-                viewport={{ once: true, amount: 0.1 }}
-                className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
-            >
+            <motion.div variants={textVariant()}>
+                <p className={`${styles.sectionSubText} `}>Enlightenment</p>
+                <h2 className={`${styles.sectionHeadText}`}><span className="text-main">E</span>ducation.</h2>
+            </motion.div>
 
-                <motion.div variants={textVariant()}>
-                    <p className={`${styles.sectionSubText} `}>Enlightenment</p>
-                    <h2 className={`${styles.sectionHeadText}`}><span className="text-main">E</span>ducation.</h2>
-                </motion.div>
-
-                <div className='w-full flex'>
-                    <motion.p
-                        variants={fadeIn("", "", 0.1, 1)}
-                        className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-                    >
-                        My education has been a journey of self-discovery and growth. My educational details are as follows.
-                    </motion.p>
-                </div>
-
-
-            </motion.section>
-
+            <div className='w-full flex'>
+                <motion.p
+                    variants={fadeIn("", "", 0.1, 1)}
+                    className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+                >
+                    My education has been a journey of self-discovery and growth. My educational details are as follows.
+                </motion.p>
+            </div>
 
             <Container id="education">
                 <Wrapper>
@@ -132,4 +121,4 @@ const Education = () => {
     )
 }
 
-export default Education;
+export default SectionWrapper(Education, 'education');
