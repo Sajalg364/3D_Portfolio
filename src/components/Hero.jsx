@@ -14,7 +14,7 @@ const ResumeButton = styled.a`
     appearance: button;
     text-decoration: none;
     width: 95%;
-    max-width: 220px;
+    max-width: 200px;
     text-align: center;
     padding: 12px 0;
     color:${({ theme }) => theme.white};
@@ -40,7 +40,7 @@ const ResumeButton = styled.a`
     @media (max-width: 640px) {
         padding: 10px 0;
         font-size: 18px;
-        max-width: 170px;
+        max-width: 120px;
     } 
 
 `;
@@ -68,7 +68,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop React Websites <br className="sm:block hidden" />
             & React Native Apps
           </p>
-          <ResumeButton className="z-20 mt-[24px]" href={bio.resume} target='_blank' >Check Resume</ResumeButton>
+          <ResumeButton className="z-20 mt-[24px]" href={bio.resume} target='_blank' >Resume</ResumeButton>
         </div>
       </div>
       

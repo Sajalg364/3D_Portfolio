@@ -22,7 +22,7 @@ const Container = styled.div`
     align-items: center;
     padding: 0px 0px 60px 0px;
     @media (max-width: 960px) {
-        padding: 20px;
+        padding: 5px;
     }
 `;
 
@@ -96,26 +96,27 @@ const Education = () => {
                     My education has been a journey of self-discovery and growth. My educational details are as follows.
                 </motion.p>
             </div>
-            <Container id="education">
-            <Wrapper>
-            <TimelineSection>
-                <Timeline>
-                    {education.map((education, index) => (
-                        <TimelineItem >
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                <EducationCard education={education} />
-                            </TimelineContent>
-                            <TimelineSeparator>
-                                <TimelineDot variant="outlined" color="secondary" />
-                                {index !== education.length && <TimelineConnector style={{ background: '#854CE6' }} />}
-                            </TimelineSeparator>
-                        </TimelineItem>
-                    ))}
-                </Timeline>
 
-            </TimelineSection>
-            </Wrapper>
-            </Container>  
+            <Container id="education">
+                <Wrapper>
+                    <TimelineSection>
+                        <Timeline>
+                            {education.map((education, index) => (
+                                <TimelineItem >
+                                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                                        <EducationCard education={education} />
+                                    </TimelineContent>
+                                    <TimelineSeparator>
+                                        <TimelineDot variant="outlined" color="secondary" />
+                                        {index !== education.length && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    </TimelineSeparator>
+                                </TimelineItem>
+                            ))}
+                        </Timeline>
+
+                    </TimelineSection>
+                </Wrapper>
+            </Container>
         </>
 
     )
