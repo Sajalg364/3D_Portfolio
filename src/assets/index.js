@@ -28,6 +28,7 @@ import tesla from "./company/tesla.png";
 
 import fridge from "./fridge.png";
 import ott from "./ott.png";
+import ongoing from "./ongoing.jpg"
 
 export {
   logo,
@@ -57,4 +58,5 @@ export {
   tesla,
   fridge,
   ott,
+  ongoing
 };

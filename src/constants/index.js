@@ -22,6 +22,7 @@ import {
     threejs,
     fridge,
     ott,
+    ongoing
   } from "../assets";
 
   const bio = {
@@ -315,7 +316,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: fridge,
+      image: ongoing,
       source_code_link: "https://github.com/Sajalg364/Chat_App",
     },
   ];
