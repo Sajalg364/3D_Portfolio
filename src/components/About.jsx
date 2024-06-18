@@ -28,18 +28,22 @@ const ServiceCard = ({ index, title, icon, img, url }) => (
           className='w-16 h-16 object-contain'
         />
 
-        <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-          <div
-            onClick={() => window.open(url, "_blank")}
-            className='bg-black w-12 h-12 rounded-full flex justify-center items-center cursor-pointer'
-          >
-            <img
-              src={img}
-              alt='source code'
-              className='w-10 h-10 rounded-full object-contain'
-            />
+        {
+          img &&
+
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div
+              onClick={() => window.open(url, "_blank")}
+              className='bg-black w-12 h-12 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={img}
+                alt='source code'
+                className='w-10 h-10 rounded-full object-contain'
+              />
+            </div>
           </div>
-        </div>
+        }
 
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}

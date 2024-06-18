@@ -64,7 +64,7 @@ const Hero = () => {
             Hi, I'm
             <span className="text-main"> Sajal </span>
           </h1>
-          <p className={`${styles.heroSubText2} text-white mt-[0.8rem]`}>
+          <p className={`${styles.heroSubText} text-white mt-[0.8rem]`}>
             I am a 
             <span className="text-main"> {text} </span>
           </p>
@@ -75,7 +75,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[45%] inset-0 relative top-[24rem] sm:top-[22] md:top-[20rem] lg:top-[18rem]  mx-auto items-center">
+      <div className="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[45%] inset-0 relative top-[24rem] sm:top-[22rem] md:top-[20rem] lg:top-[18rem]  mx-auto items-center">
           <Lottie loop={true} animationData={hero1}/>
       </div>
 

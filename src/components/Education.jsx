@@ -18,10 +18,11 @@ const Container = styled.div`
     justify-content: center;
     position: relative;
     z-index: 1;
-    align-items: center;
-    padding: 0px 0px 60px 0px;
+    overflow: hidden;
+    align-items: center;  
+    // padding: 0px 0px 60px 0px;
     @media (max-width: 960px) {
-        padding: 5px;
+        // padding: 5px;
     }
 `;
 
@@ -33,7 +34,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1350px;
-    padding: 30px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
     gap: 12px;
     @media (max-width: 960px) {
         flex-direction: column;
@@ -72,16 +73,13 @@ const TimelineSection = styled.div`
     align-items: center;
     justify-content: center;
     gap: 12px;
-    // @media (max-width: 660px) {
-    //     align-items: center;
-    // }
 `;
 
 
 
 const Education = () => {
     return (
-        <>
+        <div >
             <motion.div variants={textVariant()}>
                 <p className={`${styles.sectionSubText} `}>Enlightenment</p>
                 <h2 className={`${styles.sectionHeadText}`}><span className="text-main">E</span>ducation.</h2>
@@ -101,22 +99,21 @@ const Education = () => {
                     <TimelineSection>
                         <Timeline>
                             {education.map((education, index) => (
-                                <TimelineItem >
-                                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                                <TimelineItem>
+                                    <TimelineContent sx={{ py: '12px', px: '0px'}}>
                                         <EducationCard education={education} />
                                     </TimelineContent>
-                                    <TimelineSeparator>
+                                    <TimelineSeparator className='pl-[0.6rem]'>
                                         <TimelineDot variant="outlined" color="secondary" />
                                         {index !== education.length && <TimelineConnector style={{ background: '#854CE6' }} />}
                                     </TimelineSeparator>
-                                </TimelineItem>
+                                </TimelineItem>    
                             ))}
                         </Timeline>
-
                     </TimelineSection>
                 </Wrapper>
             </Container>
-        </>
+        </div>
 
     )
 }
