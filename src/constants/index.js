@@ -22,7 +22,8 @@ import {
     threejs,
     fridge,
     ott,
-    ongoing
+    ongoing,
+    news
   } from "../assets";
 
   const bio = {
@@ -274,7 +275,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: ott,
+      image: news,
       source_code_link: "https://github.com/Sajalg364/News-App",
     },
     {

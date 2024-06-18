@@ -29,6 +29,7 @@ import tesla from "./company/tesla.png";
 import fridge from "./fridge.png";
 import ott from "./ott.png";
 import ongoing from "./ongoing.jpg"
+import news from "./news.png"
 
 export {
   logo,
@@ -58,5 +59,6 @@ export {
   tesla,
   fridge,
   ott,
-  ongoing
+  ongoing,
+  news
 };

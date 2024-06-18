@@ -22,16 +22,13 @@ const App = () => {
           <Wrapper>
 
             <About />
-            {/* <Experience /> */}
-            {/* <Tech /> */}
             <Skills />
           </Wrapper>
           <Wrapper>
 
             <Works />
-            {/* <Feedbacks /> */}
           </Wrapper>
-          <Education/>
+          <Education />
           <Wrapper>
             <div className='relative z-0 pb-[70px]'>
               <Contact />
