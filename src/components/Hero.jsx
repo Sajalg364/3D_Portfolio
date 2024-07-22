@@ -71,7 +71,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-[1.3rem] text-white-100`}>I develop React Websites <br/>
             & React Native Apps
           </p>
-          <ResumeButton className="z-20 mt-[30px]" href={bio.resume} target='_blank' >Resume</ResumeButton>
+          <ResumeButton className="z-20 mt-[3vh]" href={bio.resume} target='_blank' >Resume</ResumeButton>
         </div>
       </div>
       
